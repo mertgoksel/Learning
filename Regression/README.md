@@ -11,7 +11,7 @@ you give random values to variables and graph the result ssr at each instance. T
 
 The difference between doing this randomly and gradient descent is that, gradient descent does this much fewer times moving from big steps to miniscule as it nears to the most optimal point making it a much more efficient way.
 
-### Gradient Descent one variable
+### Gradient Descent one variable with SSR
 
 In this instance we know the optimal slope so we are looking for the intercept
 
@@ -34,7 +34,7 @@ old intercept - step size will give us the new parameter to input.
 
 Rince and repeat until the ssr slope is near 0 (normally if step size becomes lower than 0.001 then gradient descent stops the loop). Thus you will have the most optimal parameter.
 
-### Gradient Descent multiple variables.
+### Gradient Descent multiple variables with SSR
 
 Same with the one variable version until getting the SSR general function. Unlike before now we have 2 or more variables that we need to put in numbers to.
 
@@ -52,5 +52,7 @@ The method of least square loss function is not the only one. Each type of data 
 
 Notice: Loss function is the function where you apply gradient descent to. In this instance it was Sum of Squared Residuals.
 
-But whatever loss function you may use gradient descent does not change. Get the loss function slope, then put a random number in, get the step size for that number, now use old - step size as the new number; repeat till step size is lower than 0.001. 
+But whatever loss function you may use gradient descent does not change. Get the loss function slope, then put a random number in, get the step size for that number, now use old - step size as the new number; repeat till step size is lower than 0.001 (or another number bigger/smaller, or epoch size.. It depends on the situation). 
 
+# interpolation
+# road from gradient to adam
