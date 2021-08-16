@@ -26,7 +26,7 @@ for every point of data change x with that points x value
 
 now you have n amount of residual formula with only intercept being unknown. 
 
-get the sum of all these formulas to find ssr formula
+get the sum of all these formulas to find ssr formula, then derivate to get the slope formula for ssr. This will be our loss function.
 
 from here on out the algorithm will take steps to get the best parameter that results in the lowest ssr. In order to do this we will need to first put a random number to intercept. This will result in a value for the ssr and its slope. Then we will take this ssr slope and multiply it with the "Learning rate". 
 
@@ -54,5 +54,36 @@ Notice: Loss function is the function where you apply gradient descent to. In th
 
 But whatever loss function you may use gradient descent does not change. Get the loss function slope, then put a random number in, get the step size for that number, now use old - step size as the new number; repeat till step size is lower than 0.001 (or another number bigger/smaller, or epoch size.. It depends on the situation). 
 
-# interpolation
-# road from gradient to adam
+# Interpolation
+
+While not being able to predict with %100 accuracy, using ml models to get a rough idea about the real value on something.
+
+# Road From Linear Gradient Descent to ADAM
+
+Implicit updates (ISGD): Not Done (making learning rate dynamic)
+Momentum: Not Done
+Averaging: Not Done
+AdaGrad: Not Done
+RMSProp: Not Done
+Adam: Not Done
+Backtracking line search: Not Done
+Second-order methods: Not Done
+
+
+# Loss Functions
+
++Regression Loss Functions:
+    -Mean Squared Error Loss: Done
+    -Mean Squared Logarithmic Error Loss: Not Done
+    -Mean Absolute Error Loss: Not Done
+
++Binary Classification Loss Functions:
+    -Binary Cross-Entropy: Not Done
+    -Hinge Loss: Not Done
+    -Squared Hinge Loss: Not Done
+
++Multi-Class Classification Loss Functions:
+    -Multi-Class Cross-Entropy Loss: Not Done
+    -Sparse Multiclass Cross-Entropy Loss: Not Done
+    -Kullback Leibler Divergence Loss: Not Done
+
