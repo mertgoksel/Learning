@@ -61,12 +61,14 @@ While not being able to predict with %100 accuracy, using ml models to get a rou
 # Road From Linear Gradient Descent to ADAM
 
 Implicit updates (ISGD): Not Done (making learning rate dynamic)
+
 Momentum: 
     new variable formula is now 
     new = old - velocity 
     where velocity is:
     new_vel = momentum * old_vel + learning_rate * partial derivative
     momentum is generally kept at 0.8-0.9
+
 Averaging: Not Done
 AdaGrad: Not Done
 RMSProp: Not Done
