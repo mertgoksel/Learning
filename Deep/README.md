@@ -10,4 +10,8 @@
 
 ## 1 Hidden layer Logistic Reg
 
-Does not work yet. Working on it.
+***Works***
+
+## Portable full deep learning algorithm 
+
+***Works***
